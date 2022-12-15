@@ -165,15 +165,66 @@
   
 //   console.log(updatedUser)
 
-const user = {
-    id: 3,
-    name: 'Ron',
-    organization: {
-      name: 'Parks & Recreation',
-      city: 'Pawnee',
-    },
-  }
+// const user = {
+//     id: 3,
+//     name: 'Ron',
+//     organization: {
+//       name: 'Parks & Recreation',
+//       city: 'Pawnee',
+//     },
+//   }
 
-  const updatedUser = { ...user, organization: { position: 'Director' } }
+//   const updatedUser = { ...user, organization: { position: 'Director' } }
 
-  console.log(updatedUser)  
+//   console.log(updatedUser)  
+
+// const user = {
+//     name: 'Minh',
+//     age: 21
+// }
+
+// const loginUser = { ...user, isLoggedIn: true }
+
+// console.log(loginUser)
+
+
+// // Create a function to multiply three items
+// function multiply(a, b, c) {
+//     return a * b * c
+//   }
+  
+// console.log(multiply(1, 2, 3))
+
+// const numbers = [1, 2, 3]
+
+// console.log(multiply(...numbers))
+
+// function restTest(...args) {
+//     console.log(args)
+//   }
+  
+//   restTest(1, 2, 3, 4, 5, 6)
+
+// function restTest(one, two, ...args) {
+//     console.log(one)
+//     console.log(two)
+//     console.log(args)
+//   }
+  
+//   restTest(1, 2, 3, 4, 5, 6)
+
+// function testArguments() {
+//     console.log(arguments)
+//   }
+  
+//   testArguments('how', 'many', 'arguments')
+
+// const [firstTool, ...rest] = ['hammer', 'screwdriver', 'wrench']
+
+// console.log(firstTool)
+// console.log(rest)
+
+const { isLoggedIn, ...rest } = { id: 1, name: 'Ben', isLoggedIn: true }
+
+console.log(isLoggedIn)
+console.log(rest)
